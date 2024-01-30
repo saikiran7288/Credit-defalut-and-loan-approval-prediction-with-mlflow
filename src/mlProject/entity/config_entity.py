@@ -11,5 +11,11 @@ class DataIngestionConfig:
 
 
 
+@dataclass(frozen=True)
+class DataValidationConfig:
+  root_dir: Path 
+  unzip_data_dir: str
+  STATUS_FILE: Path
+  all_schema: dict
 
     
